@@ -1,0 +1,12 @@
+:root{
+    --color-one :#114b5f;
+    --color-two :#028090;
+    --color-three :#fffdfd;
+    --color-four :#456990;
+    --color-five :#f45b69;
+}
+body{
+    margin:0;
+    font-family: 'Cormorant Infant', serif;
+   /* font-family: 'Indie Flower', cursive;*/
+}
