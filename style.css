@@ -1,12 +1,126 @@
 :root{
-    --color-one :#114b5f;
-    --color-two :#028090;
-    --color-three :#fffdfd;
-    --color-four :#456990;
-    --color-five :#f45b69;
+    --primary-color :#114B5F;
+    --secondary-color:#F45B69;
+    --color-one :#028090;
+    --color-two :#456990;
+    --bg-color:#FFFDFD;
+    
+    
+    scroll-behavior: smooth;
 }
 body{
     margin:0;
     font-family: 'Cormorant Infant', serif;
    /* font-family: 'Indie Flower', cursive;*/
+}
+i{
+    font-style: normal;
+}
+header{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    letter-spacing: 1px;
+    width: 100vw; 
+    background-color:var(--bg-color);
+    position: fixed;
+    top:0;
+    height: 10vh;
+    margin-bottom: 10vh;
+}
+.header-shadow{   
+    box-shadow: 0px 2px 2px 0px rgba(243, 29, 29, 0.75);
+}
+.nav-bar{
+    flex:0 0 auto;
+    margin-right: 2rem;
+}
+.nav-bar li{
+        list-style-type: none;    
+        display: inline-block;
+        padding:0.8rem 1rem;
+}
+.nav-bar a{
+        color:var(--color-one);
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: 600;
+        
+}
+header,
+nav,
+a,
+li,
+img{
+  transition: 0.8s all;
+}
+/*logo */ 
+.logo-container{
+    margin-left:2rem;
+    flex:0 0 250px;
+    align-items: center;
+    max-width: 250px;
+}
+.logo-img{
+    width:40px;
+    max-width:100%;
+    height: auto;
+    vertical-align: middle;
+}
+.logo-text{
+    font-family: 'Yeon Sung', cursive;
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 3px;   
+}
+.logo-text-start{
+color:var(--color-one);
+}
+.logo-text-end{
+color:var(--secondary-color);
+}
+
+#home{
+    background:url(images/background.jpg);
+    width: 100vw;
+    height:100vh;
+    background-size: cover;
+    background-position: top; 
+}
+#destinations{
+    height: auto;
+    width: 100%;
+    padding-top: 10vh;        
+}
+ 
+ 
+#destinations h1,p{
+    text-align: center;
+}
+.city-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap:1rem;
+    background:#fff;
+}
+.destination-city{
+    background:var(--color-two);
+    height: 223px;
+}
+ 
+#tours{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:1rem;
+    background:#fff;
+}
+.tour-package{
+    background:var(--color-one);
+    height:333px;
+}
+
+@media (max-width:380px){
+    #home{
+        height: 50vh;
+    }
 }
